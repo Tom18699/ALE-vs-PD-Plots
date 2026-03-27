@@ -29,18 +29,18 @@ This project demonstrates how **Accumulated Local Effects (ALE) plots** solve th
 The project is divided into three main experiments:
 
 ### 1. Synthetic Data (Tree Model)
-We fit a regression tree on synthetic data where `$X_{1}$` and `$X_{2}$` are strongly correlated and `$Y = X_{1} + X_{2}^{2}$`. The experiment proves that PD plots fail at the extremes of the distribution (requiring severe extrapolation), while M-plots are biased by the correlation. ALE plots successfully recover the true linear and quadratic effects.
+We fit a regression tree on synthetic data where $X_{1}$ and $X_{2}$ are strongly correlated and $Y = X_{1} + X_{2}^{2}$. The experiment proves that PD plots fail at the extremes of the distribution (requiring severe extrapolation), while M-plots are biased by the correlation. ALE plots successfully recover the true linear and quadratic effects.
 
 <!-- Se hai caricato delle immagini PNG in images/, rimuovi i commenti HTML per mostrarle -->
-<!-- ![Experiment 1: ALE vs PD](images/nome_immagine_exp1.png) -->
+![Experiment 1: ALE vs PD](images/Maitino_ALE_2_Exp_3_paper-1.png)
 
 ### 2. Synthetic Data (Neural Network via Monte Carlo)
 Using a Monte Carlo simulation (50 replicates) and a Neural Network tuned via repeated 10-fold Cross-Validation, this experiment highlights the variance of these methods. PD plots produce highly erratic curves across iterations, while ALE plots remain incredibly stable and close to the true effect on every replicate.
 
 ### 3. Real Data (Capital Bikeshare)
-Applying the models to predict hourly bike rentals using 11 highly correlated predictors (like temperature, humidity, wind speed). The Neural Network (`$R^{2} \approx 0.90$`) reveals the practical superiority of ALE plots. For instance, the ALE plot for "feeling temperature" captures the optimal biking temperature (around 26°C), while the PD plot suggests people rent more bikes even at temperatures over 40°C. Furthermore, second-order interaction plots reveal how the effect of weather is amplified during peak rental hours.
+Applying the models to predict hourly bike rentals using 11 highly correlated predictors (like temperature, humidity, wind speed). The Neural Network ($R^{2} \approx 0.90$) reveals the practical superiority of ALE plots. For instance, the ALE plot for "feeling temperature" captures the optimal biking temperature (around 26°C), while the PD plot suggests people rent more bikes even at temperatures over 40°C. Furthermore, second-order interaction plots reveal how the effect of weather is amplified during peak rental hours.
 
-<!-- ![Experiment 3: Feeling Temperature](images/nome_immagine_exp3.png) -->
+![Experiment 3: Feeling Temperature](images/Maitino_ALE_2_Exp_3_paper-1.png)
 
 ## 🚀 How to Run
 1. Clone this repository:
