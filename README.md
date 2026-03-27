@@ -45,7 +45,7 @@ Applying the models to predict hourly bike rentals using 11 highly correlated pr
 ## 🚀 How to Run
 1. Clone this repository:
    ```bash
-   git clone [https://github.com/](https://github.com/)[TuoUsername]/[NomeDelTuoRepo].git
+   git clone [https://github.com/Tom18699/ALE-vs-PD-Plots.git](https://github.com/Tom18699/ALE-vs-PD-Plots.git)
    
 2. Open R or RStudio and ensure you have the required packages installed:
    install.packages(c("ALEPlot", "tree", "nnet", "caret"))
