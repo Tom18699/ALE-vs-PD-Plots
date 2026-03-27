@@ -59,4 +59,4 @@ Tommaso Maitino
 
 Master's Student in Data Science and Business Informatics @ University of Pisa
 
-* [LinkedIn](www.linkedin.com/in/tommaso-maitino)
+* [LinkedIn](https://www.linkedin.com/in/tommaso-maitino)
